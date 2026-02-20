@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/76baf4167f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Gemini_Generated_Image_b8ry89b8ry89b8ry.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-briefcase"></i> Subjects</a></li>
+                    <li><a href="#portfolio"><i class="fa-solid fa-chalkboard-user"></i> Mentors</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                    <li><a href="register.html"><i class="fa-solid fa-user-plus"></i> Sign up</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Junior Full Stack Developer</p>
+                <h1>Hi, I'm <span>Keith Andrei</span><br>Rosete From Bataan</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/0a5129df-21bc-4555-b481-b08d5f3f4e80.jpeg  " alt="profile">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an aspiring Full Stack Developer with a passion for building clean, functional, and user-centered digital experiences. I enjoy solving complex problems and constantly learning new technologies to improve my craft.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Project Management</span><br>Leading Teams and Projects</li>
+                            <li><span>Communication</span><br>Effective Team Communication</li>
+                            <li><span>Problem Solving</span><br>Identifying and Resolving Issues</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX Design</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Building Responsive Websites</li>
+                            <li><span>Mobile App Design</span><br>Designing Mobile Applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Cabcaben Elementary School</span><br>S.Y 2015-2016</li>
+                            <li><span>Blessed Regina Protmann</span><br>S.Y 2021-2022</li>
+                            <li><span>Softnet Information Technology</span><br>A.Y 2024-Present</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Subjects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>Data Structure Algorithm</h2>
+                    <p>Mastering the efficiency of code through optimized data organization and algorithmic complexity. This involves implementing stacks, queues, and trees to solve logical problems with high performance.</p>
+                    <a href="https://www.slideshare.net/slideshow/data-structure-and-algorithm-lesson-1pptx/260042032">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web System 1</h2>
+                    <p>Building the foundation of the modern web using HTML5, CSS, and JavaScript. This subject covers server-side logic and front-end integration to create dynamic, database-driven web applications.</p>
+                    <a href="https://www.slideshare.net/slideshow/websystemandtechnologiesintroduction1pptx/260042032">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                    <h2>Human Computer Interaction</h2>
+                    <p>Exploring the intersection of psychology and technology. We focus on user-centric design principles, usability testing, and accessibility to ensure digital products are intuitive for everyone.</p>
+                    <a href="https://www.slideshare.net/slideshow/hci-lesson-1-introduction-to-humancomputer-interactionpdf/267107579">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio"> 
+        <div class="container">
+            <h1 class="sub-title">My Professor</h1>
+            <div class="work-list" id="workList">
+                </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> kaijouzo27@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/RESUME.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 User Registry System. All rights reserved.
+        </div>
+    </div>
+
+
+    <script src="JavaScript/portfolio.js"></script>
+</body>
+</html> 
